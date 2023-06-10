@@ -21,6 +21,7 @@ let package = Package(
             name: "yoga",
             dependencies: [],
             path: "./yoga",
+            source: ["."],
             publicHeadersPath: "./swiftpm-support",
             cxxSettings: [
                 .headerSearchPath("../"),
@@ -30,5 +31,6 @@ let package = Package(
             ]
         ),
     ],
-    cxxLanguageStandard: .cxx14
+    cLanguageStandard: .gnu11,
+    cxxLanguageStandard: .gnucxx14
 )
