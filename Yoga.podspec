@@ -39,4 +39,5 @@ Pod::Spec.new do |spec|
   spec.source_files = 'yoga/**/*.{h,cpp}'
   spec.public_header_files = 'yoga/{Yoga,YGEnums,YGMacros,YGValue}.h'
   spec.swift_version = '5.1'
+  spec.exclude_files = 'yoga/swiftpm-support/*.h'
 end
