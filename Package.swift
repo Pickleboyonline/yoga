@@ -18,16 +18,12 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "yoga",
-            dependencies: [],
-            path: "./yoga",
-            sources: ["."],
-            publicHeadersPath: "./swiftpm-support",
-            cxxSettings: [
-                .headerSearchPath("../"),
-            ],
-            linkerSettings: [
-                .linkedFramework("Foundation"),
+            name: "Yoga",
+            path: ".",
+            sources: ["yoga"],
+            publicHeadersPath: "yoga/include",
+            cSettings: [
+                .headerSearchPath("."),
             ]
         ),
     ],
