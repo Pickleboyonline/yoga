@@ -12,8 +12,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "yoga",
-            targets: ["yoga"]
+            name: "Yoga",
+            targets: ["Yoga"]
         ),
     ],
     targets: [
